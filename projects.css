@@ -27,6 +27,7 @@ body {
 }
 
 .home {
+  display: inline-block; /* Keep links side by side on larger screens */
   margin-left: 50px;
   font-size: large;
 }
@@ -90,8 +91,11 @@ body {
   }
 
   .home {
-    margin-left: 10px;  /* Further reduce margin for very small screens */
-    font-size: small;  /* Make font size smaller */
+    display: block;  /* Stack the links vertically on mobile devices */
+    margin-left: 0;  /* Remove left margin for better alignment */
+    margin-top: 10px;  /* Add margin-top for spacing between links */
+    font-size: small;  /* Make font size smaller for mobile devices */
+    text-align: center;  /* Center align the text for mobile devices */
   }
 
   .projects a {
