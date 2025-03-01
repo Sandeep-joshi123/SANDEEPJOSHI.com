@@ -1,64 +1,102 @@
-.class{
+/* Existing Styles */
+.class {
   background-color: rgb(223, 241, 170);
   border: 5px solid black;
   border-radius: 20px;
 }
 
-body{
+body {
   background-color: rgb(223, 241, 170);
 }
 
-
-.head{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: brown;
-    border: 3px solid black;
-    border-radius: 25px;
-    height: 80px;
-    margin-top: 30px;
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: brown;
+  border: 3px solid black;
+  border-radius: 25px;
+  height: 80px;
+  margin-top: 30px;
 }
-    
+
 .home:hover {
-    background-color: yellow;
-    color: rgb(222, 5, 5);
-  }
-  
-  .home{
-    margin-left: 50px;
-    font-size: large;
-  }
+  background-color: yellow;
+  color: rgb(222, 5, 5);
+}
 
-  /* When holding and pressing the button */
-  .home:active {
-    background-color: rgb(246, 9, 9);
-    color: white;
-    outline: 2px solid black;
-  }
+.home {
+  margin-left: 50px;
+  font-size: large;
+}
 
-  .ho,e:visited{
-    background-color: yellow;
-    color: rgb(102, 6, 237);
-  }
-  
-  .projects a {
-      display: block;
-      color: blue;
-      text-decoration: none;
-      margin: 10px 0;
-      font-size: 16px;
-      text-align: center;
-      margin-top: 40px;
-      margin-bottom: 40px;
-      font-size: larger;
-  }
+/* When holding and pressing the button */
+.home:active {
+  background-color: rgb(246, 9, 9);
+  color: white;
+  outline: 2px solid black;
+}
+
+.home:visited {
+  background-color: yellow;
+  color: rgb(102, 6, 237);
+}
+
+.projects a {
+  display: block;
+  color: blue;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: larger;
+}
 
 .projects a:hover {
-    text-decoration: underline;
-    color: crimson;
+  text-decoration: underline;
+  color: crimson;
 }
 
+/* Media Queries for Responsiveness */
 
- 
+/* When the screen width is 768px or smaller (e.g., tablets and mobile devices) */
+@media (max-width: 768px) {
+  .head {
+    flex-direction: column;  /* Stack the content vertically */
+    height: auto;  /* Adjust height for smaller screens */
+    margin-top: 20px;  /* Reduce margin */
+  }
+
+  .home {
+    margin-left: 20px;  /* Reduce margin for smaller screens */
+    font-size: medium;  /* Adjust font size for better readability */
+  }
+
+  .projects a {
+    font-size: 18px;  /* Increase font size slightly for better readability on smaller screens */
+    margin-top: 20px;  /* Adjust top margin */
+    margin-bottom: 20px;  /* Adjust bottom margin */
+  }
+}
+
+/* When the screen width is 480px or smaller (e.g., small mobile devices) */
+@media (max-width: 480px) {
+  .head {
+    height: auto;  /* Make the header's height adjust dynamically */
+    margin-top: 10px;  /* Further reduce margin */
+  }
+
+  .home {
+    margin-left: 10px;  /* Further reduce margin for very small screens */
+    font-size: small;  /* Make font size smaller */
+  }
+
+  .projects a {
+    font-size: 16px;  /* Further adjust font size for small screens */
+    margin-top: 10px;  /* Adjust top margin */
+    margin-bottom: 10px;  /* Adjust bottom margin */
+  }
+}
