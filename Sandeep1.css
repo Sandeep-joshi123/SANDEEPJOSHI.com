@@ -1,92 +1,175 @@
-body{
-    background-color: rgb(223, 241, 170);
-    border: 5px solid black;
-    border-radius: 20px;
+/* Existing Styles */
+body {
+  background-color: rgb(223, 241, 170);
+  border: 5px solid black;
+  border-radius: 20px;
 }
 
-.sandeep{
-    display: flex;
-    border: 3px solid black;
-    border-radius: 25px;
-    text-align: center;
-    margin-top: 10px;
-    height: 250px;
-    align-items: center;
-    justify-content: center;
-    background-color:rgb(240, 89, 89);
-    text-shadow:2px 1px 10px yellow ;
-    box-shadow: 2px 10px  6px black;
-    font-size: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
+.sandeep {
+  display: flex;
+  border: 3px solid black;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 10px;
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(240, 89, 89);
+  text-shadow: 2px 1px 10px yellow;
+  box-shadow: 2px 10px 6px black;
+  font-size: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.navigation{
-    font-size: x-large;
-    margin-top: 5px;
-    height: 40px;
-    margin-left: 10px;
-    margin-right: 10px;
-     text-shadow:2px 1px 8px rgb(255, 89, 0) ;
+.navigation {
+  font-size: x-large;
+  margin-top: 5px;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-shadow: 2px 1px 8px rgb(255, 89, 0);
 }
 
-.nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid black;
-    border-radius: 20px;
-    background-color: rgba(186, 218, 246, 0.245);
-    text-shadow:2px 3px 8px rgb(255, 89, 0) ;
-    box-shadow: 2px 10px 6px black;
-
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 20px;
+  background-color: rgba(186, 218, 246, 0.245);
+  text-shadow: 2px 3px 8px rgb(255, 89, 0);
+  box-shadow: 2px 10px 6px black;
 }
 
-.navi{
+.navi {
   font-size: 20px;
 }
 
-.navitems{
-    list-style: none;
-    margin: 30px;
+.navitems {
+  list-style: none;
+  margin: 30px;
 }
 
-.navi:hover{
-    background-color: yellow;
-    color: rgb(244, 18, 18);
-   
+.navi:hover {
+  background-color: yellow;
+  color: rgb(244, 18, 18);
 }
 
-  .navi:visited{
-    background-color: yellow;
-    color: rgb(102, 6, 237);
+.navi:visited {
+  background-color: yellow;
+  color: rgb(102, 6, 237);
+}
+
+.navi:active {
+  background-color: rgb(240, 14, 14);
+  color: white;
+  outline: 2px solid black;
+}
+
+.image {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.para {
+  font-size: 30px;
+  margin: 20px;
+  padding-left: 20px;
+}
+
+.home {
+  font-size: 30px;
+  text-align: center;
+}
+
+.top {
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .sandeep {
+    font-size: 30px; /* Reduce font size for smaller screens */
+    height: 200px; /* Adjust height */
   }
 
-  .navi:active{
-    background-color: rgb(240, 14, 14);
-    color: white;
-    outline: 2px solid black;
+  .navigation {
+    font-size: large; /* Adjust font size */
   }
 
-  .image{
-    text-align: center;
-    margin-top: 200px;
+  .nav {
+    flex-direction: column; /* Stack nav items vertically */
+    padding: 10px;
   }
 
+  .navi {
+    font-size: 18px; /* Reduce font size */
+  }
 
-
-  .para{
-    font-size: 30px;
+  .navitems {
     margin: 20px;
-    padding-left: 20px;
   }
 
-  .home{
-    font-size: 30px;
-    text-align: center;   
+  .image {
+    margin-top: 100px; /* Reduce top margin */
   }
 
-  .top{
-    font-size: 30px;
-    padding-left: 10px;
+  .para {
+    font-size: 24px; /* Adjust font size for better readability */
+    margin: 10px;
   }
+
+  .home {
+    font-size: 25px; /* Reduce font size */
+  }
+
+  .top {
+    font-size: 25px; /* Reduce font size */
+  }
+}
+
+/* For small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .sandeep {
+    font-size: 20px; /* Further reduce font size */
+    height: 150px; /* Adjust height */
+  }
+
+  .navigation {
+    font-size: medium; /* Reduce font size */
+  }
+
+  .nav {
+    flex-direction: column; /* Stack nav items vertically */
+    padding: 5px;
+  }
+
+  .navi {
+    font-size: 16px; /* Reduce font size */
+  }
+
+  .navitems {
+    margin: 15px;
+  }
+
+  .image {
+    margin-top: 50px; /* Adjust margin */
+  }
+
+  .para {
+    font-size: 20px; /* Reduce font size */
+    margin: 10px;
+  }
+
+  .home {
+    font-size: 20px; /* Further reduce font size */
+  }
+
+  .top {
+    font-size: 20px; /* Further reduce font size */
+  }
+}
