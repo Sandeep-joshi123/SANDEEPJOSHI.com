@@ -34,11 +34,9 @@ body {
 
 /* When holding and pressing the button */
 .home:active {
-  background-color: rgb(246, 9, 9);
+  background-color: rgb(240, 14, 14);
   color: white;
   outline: 2px solid black;
-  transform: scale(0.95); /* Optional: add a slight scaling effect for better feedback */
-  transition: transform 0.1s ease-in-out; /* Smooth transition */
 }
 
 .home:visited {
