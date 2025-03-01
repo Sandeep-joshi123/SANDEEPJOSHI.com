@@ -34,9 +34,9 @@ body {
 
 /* When holding and pressing the button */
 .home:active {
-  background-color: rgb(240, 14, 14);
-  color: white;
-  outline: 2px solid black;
+     background-color: rgb(246, 9, 9);
+    color: white;
+    outline: 2px solid black;
 }
 
 .home:visited {
