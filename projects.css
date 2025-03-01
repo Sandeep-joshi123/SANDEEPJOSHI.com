@@ -1,0 +1,64 @@
+.class{
+  background-color: rgb(223, 241, 170);
+  border: 5px solid black;
+  border-radius: 20px;
+}
+
+body{
+  background-color: rgb(223, 241, 170);
+}
+
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: brown;
+    border: 3px solid black;
+    border-radius: 25px;
+    height: 80px;
+    margin-top: 30px;
+}
+    
+.home:hover {
+    background-color: yellow;
+    color: rgb(222, 5, 5);
+  }
+  
+  .home{
+    margin-left: 50px;
+    font-size: large;
+  }
+
+  /* When holding and pressing the button */
+  .home:active {
+    background-color: rgb(246, 9, 9);
+    color: white;
+    outline: 2px solid black;
+  }
+
+  .ho,e:visited{
+    background-color: yellow;
+    color: rgb(102, 6, 237);
+  }
+  
+  .projects a {
+      display: block;
+      color: blue;
+      text-decoration: none;
+      margin: 10px 0;
+      font-size: 16px;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      font-size: larger;
+  }
+
+.projects a:hover {
+    text-decoration: underline;
+    color: crimson;
+}
+
+
+ 

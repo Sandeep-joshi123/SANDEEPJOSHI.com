@@ -1,0 +1,46 @@
+.class{
+    background-color: rgb(223, 241, 170);
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+body{
+    background-color: rgb(223, 241, 170);
+}
+
+.certificate{
+    text-align: center;
+}
+
+.image img {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    width: 600px;        /* Set the desired width */
+    height: auto;        /* Maintain aspect ratio */
+  }
+  
+.certify{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    display: block;
+}
+
+.home:hover {
+    background-color: yellow;
+    color: rgb(222, 5, 5);
+  }
+   
+  .home{
+    margin-left: 50px;
+   font-size: large;
+  }
+  
+  .home:active {
+    background-color: rgb(246, 9, 9);
+    color: white;
+    outline: 2px solid black;
+  }

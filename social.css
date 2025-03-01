@@ -1,0 +1,59 @@
+.class{
+  background-color: rgb(223, 241, 170);
+  border: 5px solid black;
+  border-radius: 20px;
+}
+
+body{
+  background-color: rgb(223, 241, 170);
+}
+
+
+.social {
+    display: flex;        /* Align the images in a row */
+    gap: 70px;            /* Add some gap between the images */
+    justify-content: center; /* Optional: Center the images */
+    align-items: center;  /* Optional: Align images vertically */
+  }
+  
+  .social img {
+    margin-top: 70px;
+    width: 200px;        /* Set the desired width */
+    height: auto;        /* Maintain aspect ratio */
+  }
+  
+  .mob1{
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  .mob{
+    text-decoration: none;
+  }
+ 
+  .mob:hover{
+    background-color: yellow;
+    color: rgb(222, 5, 5);
+  }
+
+  .mob:active{
+    background-color: rgb(246, 9, 9);
+    color: white;
+    outline: 2px solid black;
+  }
+
+  .home:hover {
+    background-color: yellow;
+    color: rgb(222, 5, 5);
+  }
+   
+  .home{
+    margin-left: 50px;
+   font-size: large;
+  }
+  
+  .home:active {
+    background-color: rgb(246, 9, 9);
+    color: white;
+    outline: 2px solid black;
+  }
