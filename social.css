@@ -1,59 +1,97 @@
-.class{
+/* Existing Styles */
+.class {
   background-color: rgb(223, 241, 170);
   border: 5px solid black;
   border-radius: 20px;
 }
 
-body{
+body {
   background-color: rgb(223, 241, 170);
 }
 
-
 .social {
-    display: flex;        /* Align the images in a row */
-    gap: 70px;            /* Add some gap between the images */
-    justify-content: center; /* Optional: Center the images */
-    align-items: center;  /* Optional: Align images vertically */
+  display: flex;        /* Align the images in a row */
+  gap: 70px;            /* Add some gap between the images */
+  justify-content: center; /* Optional: Center the images */
+  align-items: center;  /* Optional: Align images vertically */
+}
+
+.social img {
+  margin-top: 70px;
+  width: 200px;        /* Set the desired width */
+  height: auto;        /* Maintain aspect ratio */
+}
+
+.mob1 {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.mob {
+  text-decoration: none;
+}
+
+.mob:hover {
+  background-color: yellow;
+  color: rgb(222, 5, 5);
+}
+
+.mob:active {
+  background-color: rgb(246, 9, 9);
+  color: white;
+  outline: 2px solid black;
+}
+
+.home:hover {
+  background-color: yellow;
+  color: rgb(222, 5, 5);
+}
+
+.home {
+  margin-left: 50px;
+  font-size: large;
+}
+
+.home:active {
+  background-color: rgb(246, 9, 9);
+  color: white;
+  outline: 2px solid black;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .social {
+    flex-direction: column; /* Stack the images vertically on smaller screens */
+    gap: 30px; /* Reduce gap between images */
   }
-  
+
   .social img {
-    margin-top: 70px;
-    width: 200px;        /* Set the desired width */
-    height: auto;        /* Maintain aspect ratio */
-  }
-  
-  .mob1{
-    margin-top: 100px;
-    text-align: center;
+    width: 150px; /* Adjust image width for smaller screens */
+    margin-top: 40px; /* Adjust top margin */
   }
 
-  .mob{
-    text-decoration: none;
+  .home {
+    margin-left: 20px; /* Reduce left margin for smaller screens */
+    font-size: medium; /* Adjust font size for smaller screens */
   }
- 
-  .mob:hover{
-    background-color: yellow;
-    color: rgb(222, 5, 5);
+}
+
+/* For small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .social {
+    flex-direction: column; /* Stack the images vertically on very small screens */
+    gap: 20px; /* Further reduce gap between images */
   }
 
-  .mob:active{
-    background-color: rgb(246, 9, 9);
-    color: white;
-    outline: 2px solid black;
+  .social img {
+    width: 120px; /* Further reduce image width */
+    margin-top: 20px; /* Adjust top margin */
   }
 
-  .home:hover {
-    background-color: yellow;
-    color: rgb(222, 5, 5);
+  .home {
+    margin-left: 10px; /* Further reduce left margin for very small screens */
+    font-size: small; /* Make font size smaller */
   }
-   
-  .home{
-    margin-left: 50px;
-   font-size: large;
-  }
-  
-  .home:active {
-    background-color: rgb(246, 9, 9);
-    color: white;
-    outline: 2px solid black;
-  }
+}
