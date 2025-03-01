@@ -157,7 +157,7 @@ body {
   }
 
   .image {
-    margin-top: 50px; /* Adjust margin */
+    margin-top: 120px; /* Increased top margin for small screens */
   }
 
   .para {
