@@ -1,77 +1,87 @@
-/* Existing Styles */
-.class {
-    background-color: rgb(223, 241, 170);
-    border: 5px solid black;
-    border-radius: 20px;
-}
-
+/* BODY */
 body {
-    background-color: rgb(223, 241, 170);
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #c3ec52, #0ba29d);
+  text-align: center;
 }
 
+/* MAIN BOX */
+.class {
+  margin: 40px auto;
+  padding: 30px;
+  width: 70%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* TITLE */
 .certificate {
-    text-align: center;
+  margin-bottom: 30px;
 }
 
-.image img {
-    margin-top: 70px;
-    margin-bottom: 50px;
-    width: 600px;        /* Set the desired width */
-    height: auto;        /* Maintain aspect ratio */
-}
-
+/* CARD CONTAINER */
 .certify {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-.image {
-    display: block;
+/* CARD */
+.card {
+  width: 250px;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 12px;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* HOVER */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* BUTTON */
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: black;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.card a:hover {
+  background: red;
+}
+
+/* NAV BUTTONS */
+.home {
+  display: inline-block;
+  margin: 20px 10px;
+  padding: 10px 18px;
+  text-decoration: none;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 2px solid black;
+  transition: 0.3s;
 }
 
 .home:hover {
-    background-color: yellow;
-    color: rgb(222, 5, 5);
+  background: black;
+  color: white;
 }
 
-.home {
-    margin-left: 50px;
-    font-size: large;
-}
-
-.home:active {
-    background-color: rgb(246, 9, 9);
-    color: white;
-    outline: 2px solid black;
-}
-
-/* Media Queries for Responsiveness */
-
-/* For tablets and smaller devices (max-width: 768px) */
+/* MOBILE */
 @media (max-width: 768px) {
-    .image img {
-        width: 100%; /* Make image fill the available width */
-        margin-top: 40px;  /* Adjust top margin */
-        margin-bottom: 30px;  /* Adjust bottom margin */
-    }
-
-    .home {
-        margin-left: 20px; /* Reduce left margin */
-        font-size: medium; /* Adjust font size */
-    }
-}
-
-/* For small mobile devices (max-width: 480px) */
-@media (max-width: 480px) {
-    .image img {
-        width: 100%; /* Full-width image */
-        margin-top: 20px; /* Adjust top margin */
-        margin-bottom: 20px; /* Adjust bottom margin */
-    }
-
-    .home {
-        margin-left: 10px; /* Further reduce left margin */
-        font-size: small; /* Smaller font size */
-    }
+  .class {
+    width: 90%;
+  }
 }
