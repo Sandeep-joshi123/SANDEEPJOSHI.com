@@ -1,97 +1,125 @@
-/* Existing Styles */
-.class {
-  background-color: rgb(223, 241, 170);
-  border: 5px solid black;
-  border-radius: 20px;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* BODY */
 body {
-  background-color: rgb(223, 241, 170);
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  text-align: center;
 }
 
+/* MAIN BOX */
+.class {
+  margin: 40px auto;
+  padding: 30px;
+  width: 60%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* HEADING */
+.class h2 {
+  margin-bottom: 20px;
+}
+
+/* SOCIAL ICONS */
 .social {
-  display: flex;        /* Align the images in a row */
-  gap: 70px;            /* Add some gap between the images */
-  justify-content: center; /* Optional: Center the images */
-  align-items: center;  /* Optional: Align images vertically */
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
 }
 
 .social img {
-  margin-top: 70px;
-  width: 200px;        /* Set the desired width */
-  height: auto;        /* Maintain aspect ratio */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
+/* 🔥 ICON HOVER / TAP EFFECT */
+.social img:hover,
+.social img:active {
+  transform: translateY(-10px) scale(1.15);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* MOBILE NUMBER + MESSAGE */
 .mob1 {
-  margin-top: 100px;
-  text-align: center;
+  margin-top: 20px;
 }
 
 .mob {
   text-decoration: none;
+  color: white;
+  background: #333;
+  padding: 10px 18px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: 0.3s;
 }
 
+/* 🔥 BUTTON HOVER */
 .mob:hover {
-  background-color: yellow;
-  color: rgb(222, 5, 5);
+  background: #ff416c;
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-.mob:active {
-  background-color: rgb(246, 9, 9);
-  color: white;
-  outline: 2px solid black;
-}
-
-.home:hover {
-  background-color: yellow;
-  color: rgb(222, 5, 5);
-}
-
+/* NAVIGATION LINKS */
 .home {
-  margin-left: 50px;
-  font-size: large;
+  display: inline-block;
+  margin: 20px 10px;
+  padding: 10px 18px;
+  text-decoration: none;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+  border: 2px solid black;
 }
 
-.home:active {
-  background-color: rgb(246, 9, 9);
+/* 🔥 NAV HOVER */
+.home:hover {
+  background: black;
   color: white;
-  outline: 2px solid black;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
-/* Media Queries for Responsiveness */
+/* ================= MOBILE ================= */
 
-/* For tablets and smaller devices (max-width: 768px) */
 @media (max-width: 768px) {
-  .social {
-    flex-direction: column; /* Stack the images vertically on smaller screens */
-    gap: 30px; /* Reduce gap between images */
+  .class {
+    width: 85%;
   }
 
   .social img {
-    width: 150px; /* Adjust image width for smaller screens */
-    margin-top: 40px; /* Adjust top margin */
-  }
-
-  .home {
-    margin-left: 20px; /* Reduce left margin for smaller screens */
-    font-size: medium; /* Adjust font size for smaller screens */
+    width: 50px;
+    height: 50px;
   }
 }
 
-/* For small mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
-  .social {
-    flex-direction: column; /* Stack the images vertically on very small screens */
-    gap: 20px; /* Further reduce gap between images */
+  .class {
+    width: 90%;
+    padding: 20px;
   }
 
-  .social img {
-    width: 120px; /* Further reduce image width */
-    margin-top: 20px; /* Adjust top margin */
+  .social {
+    gap: 20px;
   }
 
   .home {
-    margin-left: 10px; /* Further reduce left margin for very small screens */
-    font-size: small; /* Make font size smaller */
+    display: block;
+    width: 80%;
+    margin: 10px auto;
   }
 }
