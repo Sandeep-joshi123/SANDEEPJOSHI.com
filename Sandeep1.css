@@ -1,175 +1,171 @@
-/* Existing Styles */
-body {
-  background-color: rgb(223, 241, 170);
-  border: 5px solid black;
-  border-radius: 20px;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  color: white;
+}
+
+/* HEADER */
 .sandeep {
   display: flex;
-  border: 3px solid black;
-  border-radius: 25px;
-  text-align: center;
-  margin-top: 10px;
-  height: 250px;
-  align-items: center;
   justify-content: center;
-  background-color: rgb(240, 89, 89);
-  text-shadow: 2px 1px 10px yellow;
-  box-shadow: 2px 10px 6px black;
-  font-size: 50px;
-  margin-left: 10px;
-  margin-right: 10px;
+  align-items: center;
+  height: 180px;
+  margin: 20px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  font-size: 40px;
+  letter-spacing: 2px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
+/* HOME TEXT */
+.home {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+/* NAVIGATION */
 .navigation {
-  font-size: x-large;
-  margin-top: 5px;
-  height: 40px;
-  margin-left: 10px;
-  margin-right: 10px;
-  text-shadow: 2px 1px 8px rgb(255, 89, 0);
+  margin: 30px 0;
 }
 
 .nav {
   display: flex;
   justify-content: center;
-  align-items: center;
-  border: 3px solid black;
-  border-radius: 20px;
-  background-color: rgba(186, 218, 246, 0.245);
-  text-shadow: 2px 3px 8px rgb(255, 89, 0);
-  box-shadow: 2px 10px 6px black;
-}
-
-.navi {
-  font-size: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .navitems {
   list-style: none;
-  margin: 30px;
 }
 
-.navi:hover {
-  background-color: yellow;
-  color: rgb(244, 18, 18);
-}
-
-.navi:visited {
-  background-color: yellow;
-  color: rgb(102, 6, 237);
-}
-
-.navi:active {
-  background-color: rgb(240, 14, 14);
+/* BUTTON STYLE */
+.navi {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.15);
   color: white;
-  outline: 2px solid black;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
 }
 
+/* HOVER EFFECT */
+.navi:hover {
+  transform: translateY(-8px) scale(1.05);
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* IMAGE */
 .image {
   text-align: center;
-  margin-top: 200px; /* Adjust the margin for desktop */
+  margin-top: 40px;
 }
 
+.image img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+
+.image img:hover {
+  transform: scale(1.1);
+}
+
+/* PARAGRAPHS */
 .para {
-  font-size: 30px;
-  margin: 20px;
-  padding-left: 20px;
+  width: 70%;
+  margin: 20px auto;
+  font-size: 20px;
+  line-height: 1.6;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(5px);
 }
 
-.home {
-  font-size: 30px;
-  text-align: center;
-}
-
+/* TOP BUTTON */
 .top {
-  font-size: 30px;
-  padding-left: 10px;
+  display: block;
+  width: fit-content;
+  margin: 30px auto;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-/* Media Queries for Responsiveness */
+/* HOVER */
+.top:hover {
+  background: black;
+  color: white;
+  transform: scale(1.1);
+}
 
-/* For tablets and smaller devices (max-width: 768px) */
+/* ================= MOBILE ================= */
+
 @media (max-width: 768px) {
+
   .sandeep {
-    font-size: 30px; /* Reduce font size for smaller screens */
-    height: 200px; /* Adjust height */
-  }
-
-  .navigation {
-    font-size: large; /* Adjust font size */
-  }
-
-  .nav {
-    flex-direction: column; /* Stack nav items vertically */
-    padding: 10px;
+    font-size: 28px;
+    height: 140px;
   }
 
   .navi {
-    font-size: 18px; /* Reduce font size */
-  }
-
-  .navitems {
-    margin: 20px;
-  }
-
-  .image {
-    margin-top: 150px; /* Adjust top margin for smaller screens */
+    font-size: 16px;
+    padding: 12px 18px;
   }
 
   .para {
-    font-size: 24px; /* Adjust font size for better readability */
-    margin: 10px;
+    width: 85%;
+    font-size: 18px;
   }
 
-  .home {
-    font-size: 25px; /* Reduce font size */
-  }
-
-  .top {
-    font-size: 25px; /* Reduce font size */
+  .image img {
+    width: 150px;
+    height: 150px;
   }
 }
 
-/* For small mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
-  .sandeep {
-    font-size: 20px; /* Further reduce font size */
-    height: 150px; /* Adjust height */
-  }
-
-  .navigation {
-    font-size: medium; /* Reduce font size */
-  }
 
   .nav {
-    flex-direction: column; /* Stack nav items vertically */
-    padding: 5px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .navi {
-    font-size: 16px; /* Reduce font size */
-  }
-
-  .navitems {
-    margin: 15px;
-  }
-
-  .image {
-    margin-top: 210px; /* Increased top margin to ensure Social & Contact is visible */
+    width: 80%;
+    text-align: center;
   }
 
   .para {
-    font-size: 20px; /* Reduce font size */
-    margin: 10px;
+    width: 90%;
+    font-size: 16px;
   }
 
-  .home {
-    font-size: 20px; /* Further reduce font size */
-  }
-
-  .top {
-    font-size: 20px; /* Further reduce font size */
+  .sandeep {
+    font-size: 22px;
+    height: 120px;
   }
 }
