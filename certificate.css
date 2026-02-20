@@ -12,21 +12,28 @@ body {
   text-align: center;
 }
 
-/* MAIN BOX */
+/* MAIN CONTAINER */
 .class {
   margin: 40px auto;
   padding: 30px;
-  width: 70%;
+  width: 65%;
   background: linear-gradient(135deg, #1f1c2c, #928dab);
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
   color: white;
 }
 
-/* TITLE */
-.certificate {
+/* HEADER */
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.3);
+  border-radius: 15px;
+  height: 80px;
   margin-bottom: 30px;
-  letter-spacing: 1px;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 /* CARD CONTAINER */
@@ -37,21 +44,22 @@ body {
   gap: 25px;
 }
 
-/* CARD */
+/* CARD STYLE (same feel as projects) */
 .card {
   width: 260px;
   padding: 20px;
-  background: rgba(255,255,255,0.1);
-  border-radius: 15px;
-  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(5px);
   transition: 0.3s;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
-/* HOVER EFFECT */
+/* 🔥 HOVER EFFECT */
 .card:hover {
-  transform: translateY(-12px) scale(1.03);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+  transform: translateY(-10px) scale(1.03);
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
 }
 
 /* TEXT */
@@ -79,15 +87,20 @@ body {
 
 /* BUTTON HOVER */
 .card a:hover {
-  background: #ff416c;
+  background: black;
   color: white;
   transform: scale(1.1);
 }
 
 /* NAV BUTTONS */
+.nav-buttons {
+  text-align: center;
+  margin: 30px 0;
+}
+
 .home {
   display: inline-block;
-  margin: 20px 10px;
+  margin: 10px;
   padding: 10px 18px;
   text-decoration: none;
   background: white;
@@ -109,10 +122,23 @@ body {
 /* MOBILE */
 @media (max-width: 768px) {
   .class {
-    width: 90%;
+    width: 85%;
   }
 
   .card {
     width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .class {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .home {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
   }
 }
