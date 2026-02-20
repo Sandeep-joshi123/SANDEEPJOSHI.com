@@ -1,175 +1,128 @@
-/* Existing Styles */
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
 body {
-  background-color: rgb(223, 241, 170);
-  border: 5px solid black;
-  border-radius: 20px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #dff1aa, #c2e59c);
+  color: #222;
 }
 
-.sandeep {
-  display: flex;
-  border: 3px solid black;
-  border-radius: 25px;
+/* HEADER */
+.header {
   text-align: center;
-  margin-top: 10px;
-  height: 250px;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(240, 89, 89);
-  text-shadow: 2px 1px 10px yellow;
-  box-shadow: 2px 10px 6px black;
-  font-size: 50px;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding: 40px 20px;
+  background: #ff5e5e;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-.navigation {
-  font-size: x-large;
-  margin-top: 5px;
-  height: 40px;
-  margin-left: 10px;
-  margin-right: 10px;
-  text-shadow: 2px 1px 8px rgb(255, 89, 0);
-}
-
-.nav {
+/* NAVBAR */
+.navbar {
   display: flex;
   justify-content: center;
-  align-items: center;
-  border: 3px solid black;
-  border-radius: 20px;
-  background-color: rgba(186, 218, 246, 0.245);
-  text-shadow: 2px 3px 8px rgb(255, 89, 0);
-  box-shadow: 2px 10px 6px black;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 
-.navi {
+/* BUTTONS */
+.btn {
+  text-decoration: none;
+  padding: 12px 20px;
+  background: #222;
+  color: white;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+/* HOVER EFFECT */
+.btn:hover {
+  background: #ff5e5e;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* PROFILE IMAGE */
+.profile {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.profile img {
+  width: 200px;
+  border-radius: 50%;
+  border: 4px solid black;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* ABOUT SECTION */
+.about {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
   font-size: 20px;
+  line-height: 1.6;
 }
 
-.navitems {
-  list-style: none;
+/* TOP BUTTON */
+.top-container {
+  text-align: center;
   margin: 30px;
 }
 
-.navi:hover {
-  background-color: yellow;
-  color: rgb(244, 18, 18);
-}
-
-.navi:visited {
-  background-color: yellow;
-  color: rgb(102, 6, 237);
-}
-
-.navi:active {
-  background-color: rgb(240, 14, 14);
+.top-btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  background: black;
   color: white;
-  outline: 2px solid black;
+  border-radius: 8px;
+  transition: 0.3s;
 }
 
-.image {
-  text-align: center;
-  margin-top: 200px; /* Adjust the margin for desktop */
+.top-btn:hover {
+  background: #ff5e5e;
+  transform: scale(1.1);
 }
 
-.para {
-  font-size: 30px;
-  margin: 20px;
-  padding-left: 20px;
-}
-
-.home {
-  font-size: 30px;
-  text-align: center;
-}
-
-.top {
-  font-size: 30px;
-  padding-left: 10px;
-}
-
-/* Media Queries for Responsiveness */
-
-/* For tablets and smaller devices (max-width: 768px) */
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
-  .sandeep {
-    font-size: 30px; /* Reduce font size for smaller screens */
-    height: 200px; /* Adjust height */
+  .header {
+    font-size: 22px;
   }
 
-  .navigation {
-    font-size: large; /* Adjust font size */
+  .btn {
+    padding: 10px 15px;
+    font-size: 14px;
   }
 
-  .nav {
-    flex-direction: column; /* Stack nav items vertically */
-    padding: 10px;
+  .profile img {
+    width: 150px;
   }
 
-  .navi {
-    font-size: 18px; /* Reduce font size */
-  }
-
-  .navitems {
-    margin: 20px;
-  }
-
-  .image {
-    margin-top: 150px; /* Adjust top margin for smaller screens */
-  }
-
-  .para {
-    font-size: 24px; /* Adjust font size for better readability */
-    margin: 10px;
-  }
-
-  .home {
-    font-size: 25px; /* Reduce font size */
-  }
-
-  .top {
-    font-size: 25px; /* Reduce font size */
+  .about {
+    font-size: 16px;
+    padding: 15px;
   }
 }
 
-/* For small mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
-  .sandeep {
-    font-size: 20px; /* Further reduce font size */
-    height: 150px; /* Adjust height */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .navigation {
-    font-size: medium; /* Reduce font size */
-  }
-
-  .nav {
-    flex-direction: column; /* Stack nav items vertically */
-    padding: 5px;
-  }
-
-  .navi {
-    font-size: 16px; /* Reduce font size */
-  }
-
-  .navitems {
-    margin: 15px;
-  }
-
-  .image {
-    margin-top: 210px; /* Increased top margin to ensure Social & Contact is visible */
-  }
-
-  .para {
-    font-size: 20px; /* Reduce font size */
-    margin: 10px;
-  }
-
-  .home {
-    font-size: 20px; /* Further reduce font size */
-  }
-
-  .top {
-    font-size: 20px; /* Further reduce font size */
+  .btn {
+    width: 80%;
+    text-align: center;
   }
 }
