@@ -98,10 +98,11 @@ body {
   line-height: 1.6;
   padding: 15px;
   border-radius: 10px;
-  background: rgba(255,255,255,0.15);
-  backdrop-filter: blur(5px);
-}
 
+  background: rgba(0, 0, 0, 0.5);  /* 🔥 darker glass */
+  color: #f5f5f5;                  /* soft white */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
 /* TOP BUTTON */
 .top {
   display: block;
@@ -170,3 +171,4 @@ body {
     height: 120px;
   }
 }
+
