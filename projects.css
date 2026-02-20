@@ -1,106 +1,118 @@
-/* Existing Styles */
-.class {
-  background-color: rgb(223, 241, 170);
-  border: 5px solid black;
-  border-radius: 20px;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* BODY */
 body {
-  background-color: rgb(223, 241, 170);
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  text-align: center;
 }
 
+/* MAIN CONTAINER */
+.class {
+  margin: 40px auto;
+  padding: 30px;
+  width: 65%;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  color: white;
+}
+
+/* HEADER */
 .head {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  background-color: brown;
-  border: 3px solid black;
-  border-radius: 25px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 15px;
   height: 80px;
-  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
-.home:hover {
-  background-color: yellow;
-  color: rgb(222, 5, 5);
+/* PROJECTS CONTAINER */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
-.home {
-  display: inline-block; /* Keep links side by side on larger screens */
-  margin-left: 50px;
-  font-size: large;
-}
-
-/* When holding and pressing the button */
-.home:active {
-     background-color: rgb(246, 9, 9);
-    color: white;
-    outline: 2px solid black;
-}
-
-.home:visited {
-  background-color: yellow;
-  color: rgb(102, 6, 237);
-}
-
+/* 🔥 PROJECT CARDS */
 .projects a {
   display: block;
-  color: blue;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.15);
+  color: white;
   text-decoration: none;
-  margin: 10px 0;
-  font-size: 16px;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  font-size: larger;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
 }
 
+/* 🔥 HOVER EFFECT (like social icons feel) */
 .projects a:hover {
-  text-decoration: underline;
-  color: crimson;
+  transform: translateY(-8px) scale(1.03);
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
-/* Media Queries for Responsiveness */
+/* NAV BUTTONS */
+.home {
+  display: inline-block;
+  margin: 25px 10px;
+  padding: 10px 18px;
+  text-decoration: none;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+  border: 2px solid black;
+}
 
-/* When the screen width is 768px or smaller (e.g., tablets and mobile devices) */
+/* 🔥 NAV HOVER */
+.home:hover {
+  background: black;
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* ================= MOBILE ================= */
+
 @media (max-width: 768px) {
-  .head {
-    flex-direction: column;  /* Stack the content vertically */
-    height: auto;  /* Adjust height for smaller screens */
-    margin-top: 20px;  /* Reduce margin */
-  }
-
-  .home {
-    margin-left: 20px;  /* Reduce margin for smaller screens */
-    font-size: medium;  /* Adjust font size for better readability */
+  .class {
+    width: 85%;
   }
 
   .projects a {
-    font-size: 18px;  /* Increase font size slightly for better readability on smaller screens */
-    margin-top: 20px;  /* Adjust top margin */
-    margin-bottom: 20px;  /* Adjust bottom margin */
+    font-size: 16px;
+    padding: 15px;
   }
 }
 
-/* When the screen width is 480px or smaller (e.g., small mobile devices) */
 @media (max-width: 480px) {
-  .head {
-    height: auto;  /* Make the header's height adjust dynamically */
-    margin-top: 10px;  /* Further reduce margin */
+  .class {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .projects {
+    gap: 15px;
   }
 
   .home {
-    display: block;  /* Stack the links vertically on mobile devices */
-    margin-left: 0;  /* Remove left margin for better alignment */
-    margin-top: 10px;  /* Add margin-top for spacing between links */
-    font-size: small;  /* Make font size smaller for mobile devices */
-    text-align: center;  /* Center align the text for mobile devices */
-  }
-
-  .projects a {
-    font-size: 16px;  /* Further adjust font size for small screens */
-    margin-top: 10px;  /* Adjust top margin */
-    margin-bottom: 10px;  /* Adjust bottom margin */
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
   }
 }
