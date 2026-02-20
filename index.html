@@ -1,53 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SANDEEP JOSHI</title>
-    <link rel="stylesheet" href="Sandeep1.css">
-</head>
-
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
-        <h1>SANDEEP JOSHI</h1>
-    </header>
+<!-- HEADER -->
+<header class="header">
+    <h1>SANDEEP JOSHI</h1>
+    <p class="typing"></p>
+</header>
 
-    <!-- NAVIGATION -->
-    <nav class="navbar">
-        <a href="projects.html" class="btn">🔧 Projects</a>
-        <a href="CERTIFICATE.HTML" class="btn">📝 Certifications</a>
-        <a href="social.html" class="btn">📞 Contact</a>
-    </nav>
+<!-- DARK MODE TOGGLE -->
+<div class="toggle-container">
+    <button id="darkToggle">🌙 Dark Mode</button>
+</div>
 
-    <!-- PROFILE IMAGE -->
-    <section class="profile">
-        <img src="images/sandeep.jpg" alt="Sandeep Image">
-    </section>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="projects.html" class="btn">🔧 Projects</a>
+    <a href="CERTIFICATE.HTML" class="btn">📝 Certifications</a>
+    <a href="social.html" class="btn">📞 Contact</a>
+</nav>
 
-    <!-- ABOUT -->
-    <section class="about">
-        <p>
-            I am a passionate Electronics and Communication Engineering student with a strong interest in coding and problem-solving. Proficient in C and Python, 
-            I enjoy tackling challenges through programming and am constantly learning and evolving in the world of technology.
-        </p>
+<!-- PROFILE -->
+<section class="profile">
+    <img src="images/sandeep.jpg" alt="Sandeep Image">
+</section>
 
-        <p>
-            Beyond my academic pursuits, I have a deep appreciation for ancient languages and spend time studying Sanskrit, which helps me sharpen my analytical and 
-            logical thinking. I’m also an avid chess player, which further hones my strategic mindset and decision-making skills.
-        </p>
+<!-- ABOUT -->
+<section class="about">
+    <p>I am a passionate Electronics and Communication Engineering student with a strong interest in coding and problem-solving...</p>
+</section>
 
-        <p>
-            My ultimate goal is to become a problem solver, not only in technical fields but also in broader social contexts. I am dedicated to developing solutions 
-            that can make a positive impact on society and am always looking for opportunities to collaborate with like-minded individuals to address real-world challenges.
-        </p>
-    </section>
+<!-- PROJECTS -->
+<section class="projects">
+    <h2>My Projects</h2>
 
-    <!-- BUTTON -->
-    <div class="top-container">
-        <a href="#" class="top-btn">⬆ Back to Top</a>
+    <div class="project-container">
+
+        <div class="card">
+            <h3>Line Follower Robot</h3>
+            <p>PID-based robot with improved stability and tracking accuracy.</p>
+            <a href="projects.html">View More</a>
+        </div>
+
+        <div class="card">
+            <h3>Air Monitoring System</h3>
+            <p>Sensor-based system for real-time environmental data.</p>
+            <a href="projects.html">View More</a>
+        </div>
+
     </div>
+</section>
+
+<!-- RESUME BUTTON -->
+<div class="resume">
+    <a href="resume.pdf" download class="resume-btn">⬇ Download Resume</a>
+</div>
+
+<!-- TOP BUTTON -->
+<div class="top-container">
+    <a href="#" class="top-btn">⬆ Back to Top</a>
+</div>
+
+<script src="script.js"></script>
 
 </body>
-</html>
